@@ -5,9 +5,10 @@
 - Scroll down to the <u>Migration from Gazebo classic</u> section on [this](https://gazebosim.org/api/sim/8/tutorials.html) page.
 
 ## Official examples & Tutorials for (the new) Gazebo
-- [Example - On creating a plugin](https://github.com/gazebosim/gz-sim/tree/gz-sim8/examples/plugin)
-- [Example - Other standalones](https://github.com/gazebosim/gz-sim/tree/gz-sim8/examples/standalone)
-- [Tutorial - Gazebo Transport](https://gazebosim.org/api/transport/13/tutorials.html)
+- Tutorial - [All official tutorials](https://gazebosim.org/docs/harmonic/tutorials#gazebo-tutorials)
+- Example  - [On creating a plugin](https://github.com/gazebosim/gz-sim/tree/gz-sim8/examples/plugin)
+- Example  - [Other standalones](https://github.com/gazebosim/gz-sim/tree/gz-sim8/examples/standalone)
+- Tutorial - [Gazebo Transport](https://gazebosim.org/api/transport/13/tutorials.html)
 
 ## How to Google for help on a specific problem
 - While Googling, use search terms like `How to xxxxx in Gazebo`_`Ignition`_.
