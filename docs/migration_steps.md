@@ -28,7 +28,7 @@
 ## A Note about Ignition Gazebo (Fortress)
 - At the time of writing, the official recommended version of Gazebo for ROS2 Iron is Ignition Gazebo Fortress.
 - The compatibility of Iron with Harmonic is mentioned as "Possible but use with Caution" on the Official Gazebo website.
-- <img src="./imgs/Gazebo-ROS%20compatibility.png" alt="Gazebo-ROS compatibility" width="300"/>
+- <img src="./imgs/Gazebo-ROS%20compatibility.png" alt="Gazebo-ROS compatibility" width="400"/>
 - However, it looks like a few things are broken in Fortress and it is better to do development in Gazebo Harmonic directly.
   - While developing the `modify_light_plugin` in Fortress, the lights were not working the way they were supposed to.
   - I was able to get around this by just migrating the code base from Fortress to Harmonic and no additional un-bugging.
