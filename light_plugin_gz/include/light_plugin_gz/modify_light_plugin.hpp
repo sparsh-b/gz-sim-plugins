@@ -19,35 +19,37 @@
 #include <gz/msgs/Utility.hh>
 
 namespace modify_light_plugin {
-    class ModifyLightPlugin:
-        public gz::sim::System, 
-        // public gz::sim::ISystemConfigure,
-        public gz::sim::ISystemPreUpdate
-    {
-        public:
-            ModifyLightPlugin();
-            ~ModifyLightPlugin() override;
+  class ModifyLightPlugin:
+    public gz::sim::System, 
+    // public gz::sim::ISystemConfigure,
+    public gz::sim::ISystemPreUpdate
+  {
+    public:
+      ModifyLightPlugin();
+      ~ModifyLightPlugin() override;
 
-            // void Configure(const gz::sim::Entity &_entity, const std::shared_ptr<const sdf::Element> &_sdf,
-            //     gz::sim::EntityComponentManager &_ecm, gz::sim::EventManager &_eventMgr) override;
-            void PreUpdate(const gz::sim::UpdateInfo &_info, gz::sim::EntityComponentManager &_ecm) override;
+      // void Configure(const gz::sim::Entity &_entity, const std::shared_ptr<const sdf::Element> &_sdf,
+      //     gz::sim::EntityComponentManager &_ecm, gz::sim::EventManager &_eventMgr) override;
+      void PreUpdate(const gz::sim::UpdateInfo &_info, gz::sim::EntityComponentManager &_ecm) override;
 
-        private:
-            float light_intensity;
-            gz::transport::Node node;
-            int iteration;
-            std::vector<float> intensities;
-            bool executed;
+    private:
+      float light_intensity;
+      gz::transport::Node node;
+      int iteration;
+      std::vector<float> intensities;
+      float intensity_time; // The time each intensity should be flashed for (in seconds)
+      long int startTime; // The time at which the current intensity started flashing
+      bool executed;
 
-            // timeout used for services
-            unsigned int timeout = 5000;
-            float directionX, directionY, directionZ;
-            bool result;
-            gz::msgs::Boolean response;
-            gz::msgs::Light lightRequest;
-            const std::string lightConfigService = "/world/sphere_light_world/light_config";
-            // TODO: read world's name automatically from the sdf file
-    };
+      // timeout used for services
+      unsigned int timeout = 5000;
+      float directionX, directionY, directionZ;
+      bool result;
+      gz::msgs::Boolean response;
+      gz::msgs::Light lightRequest;
+      const std::string lightConfigService = "/world/sphere_light_world/light_config";
+      // TODO: read world's name automatically from the sdf file
+  };
 }
 
 
