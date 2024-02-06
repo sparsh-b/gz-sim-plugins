@@ -1,7 +1,7 @@
 # Migrating a plugin from Gazebo-classic to (new) Gazebo
-- This file documents my experience migrating a plugin from Gazebo-classic to (new) Gazebo.
+- This file documents my notes on migrating a plugin from Gazebo-classic to (new) Gazebo.
 
-## Bunch of Documentation of Migrating away from Gazebo-classic
+## Bunch of Documentation on Migrating away from Gazebo-classic
 - Scroll down to the <u>Migration from Gazebo classic</u> section on [this](https://gazebosim.org/api/sim/8/tutorials.html) page.
 
 ## Official examples & Tutorials for (the new) Gazebo
