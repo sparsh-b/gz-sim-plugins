@@ -8,4 +8,4 @@
 ## Build the plugin
 - `mkdir build && cd build`
 - `cmake .. && make`
-- Specify the path of plugin library file using `export IGN_GAZEBO_SYSTEM_PLUGIN_PATH=<path-to-.so-file>`
+- Specify the path of plugin library file using `export GZ_SIM_SYSTEM_PLUGIN_PATH=<path-to-.so-file>`
