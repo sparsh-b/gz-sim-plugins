@@ -1,5 +1,5 @@
 # Migrating a plugin from Gazebo-classic to (new) Gazebo
-- This file documents my notes on migrating a plugin from Gazebo-classic to (new) Gazebo.
+- This file holds some notes on migrating a plugin from Gazebo-classic to (new) Gazebo.
 
 ## Bunch of Documentation on Migrating away from Gazebo-classic
 - Scroll down to the <u>Migration from Gazebo classic</u> section on [this](https://gazebosim.org/api/sim/8/tutorials.html) page.
@@ -9,7 +9,7 @@
 - [Example - Other standalones](https://github.com/gazebosim/gz-sim/tree/gz-sim8/examples/standalone)
 - [Tutorial - Gazebo Transport](https://gazebosim.org/api/transport/13/tutorials.html)
 
-## How to search for help on a specific problem on Google
+## How to Google for help on a specific problem
 - While Googling, use search terms like `How to xxxxx in Gazebo`_`Ignition`_.
   - Do this even if you are developing for (the new) Gazebo.
   - Because if you just google for `How to xxxxx in Gazebo`, more likely than not, you will land on pages meant for Gazebo-classic.
@@ -23,7 +23,7 @@
   - Note that Upper-case is maintained wherever exists.
   - For example: Replace `#include <ignition/gazebo/Types.hh>` with `#include <gz/sim/Types.hh>`
   - This should be enough for most things. But, have a look at [this](https://gazebosim.org/docs/harmonic/migration_from_ignition) extensive guide on migration from Ignition to (new) Gazebo.
-    - <u>**<h3>Especially look at these [Gotchas!](https://gazebosim.org/docs/harmonic/migration_from_ignition#gotchas)</h3>**</u>
+  - <font size="3"><u>**Especially look at these [Gotchas!](https://gazebosim.org/docs/harmonic/migration_from_ignition#gotchas)**</u></font>
 
 ## A Note about Ignition Gazebo (Fortress)
 - At the time of writing, the official recommended version of Gazebo for ROS2 Iron is Ignition Gazebo Fortress.
