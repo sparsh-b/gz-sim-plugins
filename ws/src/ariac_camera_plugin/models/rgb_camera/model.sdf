@@ -42,14 +42,8 @@
           </noise>
         </camera>
 
-        <!-- <plugin name="rgb_camera_plugin" filename="libAriacCameraPlugin.so">
-          <ros>
-            <namespace></namespace>
-          </ros>
-          <camera_type>rgb</camera_type>
-          <camera_name>custom_camera</camera_name>
-          <frame_name>custom_frame</frame_name>
-        </plugin> -->
+    <plugin filename="libAriacCameraPlugin.so" name="ariac_sensors::AriacCameraPlugin">
+    </plugin>
       </sensor>
     </link>
   </model>

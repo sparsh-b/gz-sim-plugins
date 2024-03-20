@@ -69,7 +69,7 @@
       <uri>model://rgb_camera</uri>
     </include>
 
-    <!-- <include>model://rgb_camera</include> -->
+
 
   </world>
 </sdf>

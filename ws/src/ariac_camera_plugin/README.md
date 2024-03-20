@@ -4,3 +4,6 @@
   - This Env variable can be used to point to world files & other resources as well.
 - Spawn the world with model file in it
   - `gz sim -v 4 worlds/camera_world.sdf`
+
+# CLI for Accessing Gazebo Transport Topics & Services:
+- `gz topic -h` and `gz service -h`
