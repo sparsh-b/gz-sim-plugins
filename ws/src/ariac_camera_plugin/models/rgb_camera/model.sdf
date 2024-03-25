@@ -20,11 +20,12 @@
       </visual>
 
       <sensor type="camera" name="rgb_camera">
+        <topic>gz_topic_rgb_cam_feed</topic>
         <always_on>true</always_on>
         <visualize>true</visualize>
         <update_rate>15</update_rate>
         
-        <camera name="camera_name">
+        <camera>
           <horizontal_fov>1.5</horizontal_fov>
           <image>
             <width>640</width>
@@ -42,8 +43,16 @@
           </noise>
         </camera>
 
-    <plugin filename="libAriacCameraPlugin.so" name="ariac_sensors::AriacCameraPlugin">
-    </plugin>
+        <plugin filename="libAriacCameraPlugin.so" name="ariac_sensors::AriacCameraPlugin">
+        </plugin>
+
+        <!-- <plugin filename="ImageDisplay" name="ImageDisplay">
+          <gz-gui>
+            <property key="state" type="string">docked</property>
+          </gz-gui>
+          <topic>gz_topic_rgb_cam_feed</topic>
+        </plugin> -->
+
       </sensor>
     </link>
   </model>
