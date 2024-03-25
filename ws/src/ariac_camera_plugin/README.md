@@ -5,3 +5,5 @@
 - Spawn the world with model file in it
   - `gz sim -v 4 worlds/camera_world.sdf`
 
+# To view the camera's feed:
+- After gazebo spawns, Click the `...` symbol on top-right & search for `Image Display` plugin & add (by clicking) it.
