@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(gz-cmake3 REQUIRED)
 find_package(gz-plugin2 REQUIRED COMPONENTS register)
 find_package(gz-sim8 REQUIRED)
+find_package(gz-sensors8 REQUIRED)
 set(GZ_PLUGIN_VER ${gz-plugin2_VERSION_MAJOR})
 
 
@@ -18,7 +19,9 @@ target_include_directories(AriacCameraPlugin PUBLIC include)
 # set_property(TARGET AriacCameraPlugin PROPERTY CXX_STANDARD 17)
 target_link_libraries(AriacCameraPlugin
   PRIVATE gz-plugin${GZ_PLUGIN_VER}::gz-plugin${GZ_PLUGIN_VER}
-  PRIVATE gz-sim8::gz-sim8)
+  PRIVATE gz-sim8::gz-sim8
+  PRIVATE gz-sensors8::gz-sensors8
+  )
 # ament_target_dependencies(AriacCameraPlugin
 
 # )
